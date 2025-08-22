@@ -6,8 +6,7 @@
     <title>David J Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
-
-         .navbar {
+        .navbar {
             position: fixed; /* stays at the top */
             top: 0;
             width: 100%;
@@ -30,7 +29,7 @@
         }
 
         .content {
-        padding: 80px 20px;
+            padding: 80px 20px;
         }
 
         body { 
@@ -46,8 +45,16 @@
 
         header h1 { font-size: 3rem; }
         header p { font-size: 1.2rem; color: #555; }
-        .project-card { margin-bottom: 30px; transition: transform 0.3s; }
-        .project-card:hover { transform: scale(1.05); }
+
+        .project-card { 
+            margin-bottom: 30px; 
+            transition: transform 0.3s; 
+        }
+
+        .project-card:hover { 
+            transform: scale(1.05); 
+        }
+
         footer { 
             text-align: center; 
             padding: 20px; 
@@ -55,87 +62,100 @@
             margin-top: 50px;
         }
 
-        .btn-primary { background-color: #007bff; border-color: #007bff; }
+        .btn-primary { 
+            background-color: #007bff; 
+            border-color: #007bff; 
+        }
     </style>
 </head>
 <body>
 
 <div class="navbar">
     <a href="#top">Top</a>
-    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </div>
 
-<div>
-<section id="#projects">
-<header>
+<header id="top">
     <h1>David J Portfolio</h1>
     <p>Data Analyst & Data Science</p>
 </header>
-</div>
+
+<section id="skills" class="content">
+    <h2 class="text-center mb-4">Skills</h2>
+    <p class="text-center">Python | SQL | Tableau | Data Visualization | Machine Learning</p>
 </section>
 
-<div class="container">
-    <section id="#projects">
-    <h2 class="text-center mb-4">Projects</h2>
-    <div class="row">
+<div class="container content">
+    <section id="projects">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
 
-        <!-- Project 1 --> 
-        <div class="col-md-4 project-card">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Diabetes Predictor</h5>
-                    <p class="card-text">This project predicts diabetes risk using logistic regression on a dataset of health indicators. 
-                        The project has two main components: 
-                        Data Analysis & Modeling – Logistic regression with feature scaling and hyperparameter optimization. 
-                        Flask Web Application – An interactive web interface for users to input health data and receive real-time diabetes risk predictions.</p>
-                    <a href="https://github.com/LunarKoiFish/Diabetes-Predictor" target="_blank" class="btn btn-primary">View Project</a>
+            <!-- Project 1 -->
+            <div class="col-12 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Diabetes Predictor</h5>
+                        <p class="card-text">This project predicts diabetes risk using logistic regression on a dataset of health indicators. 
+                            The project has two main components: Data Analysis & Modeling – Logistic regression with feature scaling and hyperparameter optimization. 
+                            Flask Web Application – An interactive web interface for users to input health data and receive real-time diabetes risk predictions.
+                        </p>
+                        <a href="https://github.com/LunarKoiFish/Diabetes-Predictor" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Project 2 -->
-        <div class="col-md-4 project-card">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Sales Performance Analysis (Tableau Project)</h5>
-                    <p class="card-text">This project focuses on analyzing sales performance and customer trends using Tableau. 
-                        The goal was to clean, structure, and visualize sales data to help stakeholders, including sales managers and executives, monitor year-over-year metrics, identify trends, and make data-driven decisions. 
-                        The project culminates in an interactive dashboard designed to highlight key sales insights.</p>
-                    <a href="https://github.com/LunarKoiFish/Tableau_Sales_Performance_Project" target="_blank" class="btn btn-primary">View Project</a>
+            <!-- Project 2 -->
+            <div class="col-12 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sales Performance Analysis</h5>
+                        <p class="card-text">This project focuses on analyzing sales performance and customer trends using Tableau. 
+                            The goal was to clean, structure, and visualize sales data to help stakeholders, including sales managers and executives, monitor year-over-year metrics, identify trends, and make data-driven decisions. 
+                            The project culminates in an interactive dashboard designed to highlight key sales insights.
+                        </p>
+                        <a href="https://github.com/LunarKoiFish/Tableau_Sales_Performance_Project" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Project 3 -->
-        <div class="col-md-4 project-card">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Hospital General Information Analysis</h5>
-                    <p class="card-text">This project explores hospital-level data from the CSM Hospital General Information dataset. 
-                        The goal was to clean, structure, and analyze hospital service availability and performance indicators using Python, SQL, and Tableau. 
-                        The project culminates in an interactive dashboard designed to highlight key insights for data-driven decision-making.</p>
-                    <a href="https://github.com/LunarKoiFish/CSM_Hospitals_Information" target="_blank" class="btn btn-primary">View Project</a>
+            <!-- Project 3 -->
+            <div class="col-12 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hospital General Information Analysis</h5>
+                        <p class="card-text">This project explores hospital-level data from the CSM Hospital General Information dataset. 
+                            The goal was to clean, structure, and analyze hospital service availability and performance indicators using Python, SQL, and Tableau. 
+                            The project culminates in an interactive dashboard designed to highlight key insights for data-driven decision-making.
+                        </p>
+                        <a href="https://github.com/LunarKoiFish/CSM_Hospitals_Information" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Portfolio Repo -->
-        <div class="col-md-4 project-card">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Portfolio Webpage</h5>
-                    <p class="card-text">Work in progress</p>
-                    <a href="https://github.com/LunarKoiFish/Portfolio#" target="_blank" class="btn btn-primary">View Project</a>
+            <!-- Portfolio Repo -->
+            <div class="col-12 project-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Webpage</h5>
+                        <p class="card-text">Work in progress</p>
+                        <a href="https://github.com/LunarKoiFish/Portfolio" target="_blank" class="btn btn-primary">View Project</a>
+                    </div>
                 </div>
             </div>
+
         </div>
-        
-    </div>
     </section>
 </div>
 
+<!-- Contact Section -->
+<section id="contact" class="content">
+    <h2 class="text-center mb-4">Contact</h2>
+    <p class="text-center">📧 Email: koifish.analytics@example.com | 💼 LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></p>
+</section>
+
+<!-- Footer -->
 <footer>
     &copy; 2025 David Jian
 </footer>
