@@ -20,7 +20,7 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 20px;
+            padding: 10px 20px;
             text-decoration: none;
         }
 
@@ -29,12 +29,12 @@
         }
 
         html {
-            scroll-padding-top: 50px;
+            scroll-padding-top: 80px;
         }
 
 
         .content {
-            padding: 80px 20px;
+            padding: 50px 20px;
         }
 
         body { 
@@ -44,7 +44,7 @@
 
         header { 
             text-align: center;
-            height: 400px;
+            height: 310px;
             display: flex;
             flex-direction: column; 
             padding: 30px; 
@@ -53,9 +53,13 @@
 
         header h1 { 
             font-size: 3rem;
-            padding: 80px; 
+            padding-top: 60px; 
+            padding-bottom: 40px;
         }
-        header p { font-size: 1.2rem; color: #555; }
+
+        header p { 
+            font-size: 1.2rem; color: #555; 
+        }
 
         .project-card { 
             margin-bottom: 30px; 
@@ -77,6 +81,9 @@
             background-color: #007bff; 
             border-color: #007bff; 
         }
+
+
+     
     </style>
 </head>
 <body>
@@ -86,27 +93,32 @@
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
     <a href="https://www.linkedin.com/in/davidjian00/" target="_blank"><img src="Resources/linkedin_logo.png" alt="Logo" width="30" height="30"></a>
     <a href="https://github.com/LunarKoiFish" target="_blank"><img src="Resources/github_logo.png" alt="Logo" width="30" height="30"></a>
 </div>
 
-<header id="top">
+<header id="top" class="mt-5">
     <h1>David's Portfolio</h1>
-    <p>Data Analyst & Data Science</p>
+    <p>Data Analyst & Data Scientist</p>
 </header>
 
 <section id="skills" class="content">
     <h2 class="text-center mb-4">Skills</h2>
-    <p class="text-center">Python | SQL | Tableau | Data Visualization | Machine Learning</p>
+    <p class="text-center mb-5">Data Visualization | Dashboards | Data Cleaning/Manipulation | ETL | EDA | Machine Learning (supervised & unsupervised) | Statistical modeling & hypothesis testing | Reporting </p>
+    <h2 class="text-center mb-4">Tools</h2>
+    <p class="text-center mb-5">Tableau | Excel | Google Sheets | Juypter Notebook | MongoDB | Github | AWS | Big Data </p>
+    <h2 class="text-center mb-4">Languages</h2>
+    <p class="text-center mb-5">Python (pandas, NumPy, scikit, TensorFlow) | SQL | NoSQL | VBA </p>
 </section>
 
 <div class="container content">
     <section id="projects" class="content">
-        <h2 class="text-center mb-4">Projects</h2>
+        <h2 class="text-center mb-5">Projects</h2>
         <div class="row">
 
             <!-- Project 1 -->
-            <div class="col-12 project-card">
+            <div class="col-12 mt-4 project-card">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Diabetes Predictor</h5>
@@ -178,5 +190,6 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
