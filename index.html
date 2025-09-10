@@ -35,30 +35,68 @@
 
         .content {
             padding: 50px 20px;
+            background-color: #Eae0dc;
+
         }
+
 
         body { 
             font-family: Arial, sans-serif; 
             scroll-behavior: smooth;
+            color: #293039;
+            background-color: #Eae0dc;
+            background-image: url("Resources/tech_bg1.jpeg"); 
+            background-repeat: no-repeat;           
+            background-size: cover;                 
+            background-position: center;            
+            background-attachment: fixed;            
         }
+
+        
 
         header { 
             text-align: center;
-            height: 310px;
+            height: 100vh;
             display: flex;
             flex-direction: column; 
-            padding: 30px; 
-            background-color: #8f9AA6; 
+            padding: 10px; 
+            background-repeat: no-repeat;           
+            background-size: cover;                 
+            background-position: center;            
+            background-attachment: fixed;
+            justify-content: center; 
+            align-items: center; 
+            position: relative;
+        }
+
+        #bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1;       
         }
 
         header h1 { 
-            font-size: 3rem;
+            font-size: 6rem;
             padding-top: 60px; 
             padding-bottom: 40px;
+            display: inline-block;     
+            color: white;               
+            padding: 10px 20px;           
+            border-radius: 8px;            
+            margin: 20px 0;
         }
 
         header p { 
             font-size: 1.2rem; color: #555; 
+        }
+
+        header h1, header p {
+            position: relative;
+            z-index: 1;
         }
 
         .project-card { 
@@ -96,9 +134,14 @@
     <a href="Resources/Data Analyst Resume 2025.7.pdf" target="_blank"><strong>Resume</strong></a>
     <a href="https://www.linkedin.com/in/davidjian00/" target="_blank"><img src="Resources/linkedin_logo.png" alt="Logo" width="30" height="30"></a>
     <a href="https://github.com/LunarKoiFish" target="_blank"><img src="Resources/github_logo.png" alt="Logo" width="30" height="30"></a>
+    <a href="https://public.tableau.com/app/profile/david.jian4862/vizzes" target="_blank"><img src="Resources/tableau_logo.png" alt="Logo" width="30" height="30"></a>
 </div>
 
 <header id="top" class="mt-5">
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Resources/tech_bg8.mp4" type="video/mp4">
+    </video>
+
     <h1>David's Portfolio</h1>
     <p>Data Analyst & Data Scientist</p>
 </header>
@@ -221,7 +264,7 @@
 </div>
 
 <!-- Contact Section -->
-<section id="contact" class="content">
+<section id="contact" class="container content">
     <h2 class="text-center mb-4">Contact</h2>
     <p class="text-center">📧 Email: koifish.analytics@gmail.com 
         | <img src="Resources/linkedin_logo.png" alt="Logo" width="20" height="20"> <a href="https://www.linkedin.com/in/davidjian00/" target="_blank">My LinkedIn</a> 
